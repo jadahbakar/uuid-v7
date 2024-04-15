@@ -1,0 +1,15 @@
+[package]
+name = "uuid-v7"
+version = "0.1.0"
+edition = "2021"
+
+[lints.rust]
+unsafe_code = "forbid"
+unused = "allow"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+uuid = { version = "1", features = ["v4", "v7", "fast-rng"] }
+data-encoding = "2.5"                                         # base64, base64url, base32hex
+base58 = "0.2"
